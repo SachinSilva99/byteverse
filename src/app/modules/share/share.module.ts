@@ -8,14 +8,17 @@ import { MainHeaderNavbarComponent } from './components/main-header-context/inne
 
 
 @NgModule({
-  declarations: [
-    ShareComponent,
-    MainHeaderContextComponent,
-    MainHeaderNavbarComponent
-  ],
-  imports: [
-    CommonModule,
-    ShareRoutingModule
-  ]
+    declarations: [
+        ShareComponent,
+        MainHeaderContextComponent,
+        MainHeaderNavbarComponent
+    ],
+    exports: [
+        MainHeaderContextComponent
+    ],
+    imports: [
+        CommonModule,
+        ShareRoutingModule
+    ]
 })
 export class ShareModule { }

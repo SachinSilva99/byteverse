@@ -1,9 +1,10 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { ProcessRoutingModule } from './process-routing.module';
-import { ProcessComponent } from './process.component';
-import { MainPageContextComponent } from './components/main-page-context/main-page-context.component';
+import {ProcessRoutingModule} from './process-routing.module';
+import {ProcessComponent} from './process.component';
+import {MainPageContextComponent} from './components/main-page-context/main-page-context.component';
+import {ShareModule} from "../share/share.module";
 
 
 @NgModule({
@@ -13,7 +14,9 @@ import { MainPageContextComponent } from './components/main-page-context/main-pa
   ],
   imports: [
     CommonModule,
-    ProcessRoutingModule
+    ProcessRoutingModule,
+    ShareModule
   ]
 })
-export class ProcessModule { }
+export class ProcessModule {
+}
