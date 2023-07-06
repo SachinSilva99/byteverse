@@ -4,7 +4,7 @@ import {RouterModule, Routes} from '@angular/router';
 const routes: Routes = [
 
   {
-    path: 'process',
+    path: '',
     loadChildren: () =>
       import('./modules/process/process.module').then((m) => m.ProcessModule),
   },
@@ -27,7 +27,6 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
-  declarations: []
 })
 export class AppRoutingModule {
 }
