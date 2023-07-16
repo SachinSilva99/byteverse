@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { ShareRoutingModule } from './share-routing.module';
 import { ShareComponent } from './share.component';
 import { MainHeaderContextComponent } from './components/main-header-context/main-header-context.component';
-import {NavbarComponent} from "./components/main-header-context/inner-items/navbar/navbar.component";
 import { MainHeaderNavBarComponent } from './components/main-header-context/inner-items/main-header-nav-bar/main-header-nav-bar.component';
 import { MainHeaderFooterComponent } from './components/main-header-context/inner-items/main-header-footer/main-header-footer.component';
 
@@ -13,14 +12,13 @@ import { MainHeaderFooterComponent } from './components/main-header-context/inne
     declarations: [
         ShareComponent,
         MainHeaderContextComponent,
-        NavbarComponent,
         MainHeaderNavBarComponent,
         MainHeaderFooterComponent,
 
     ],
-    exports: [
-        NavbarComponent
-    ],
+  exports: [
+    MainHeaderNavBarComponent
+  ],
     imports: [
         CommonModule,
         ShareRoutingModule
