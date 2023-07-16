@@ -25,7 +25,6 @@ import { IndustrialPageContextComponent } from './components/industrial-page-con
   declarations: [
     ProcessComponent,
     MainPageContextComponent,
-
     MainPageMainSliderComponent,
     MainPageMainClientsComponent,
     MainPageMainAboutComponent,

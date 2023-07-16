@@ -6,7 +6,7 @@ import {MainPageContextComponent} from "./components/main-page-context/main-page
 
 const routes: Routes = [
   {
-    path: '', component: MainPageContextComponent, children: [
+    path: '', component: ProcessComponent, children: [
       {path: '', redirectTo: 'home', pathMatch: "full"},
       {path: 'home', component: MainPageContextComponent},
       {path: 'industrial', component: IndustrialPageContextComponent},

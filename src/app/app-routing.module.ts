@@ -2,9 +2,13 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 
 const routes: Routes = [
-
   {
     path: '',
+    redirectTo: "process",
+    pathMatch: "full"
+  },
+  {
+    path: 'process',
     loadChildren: () =>
       import('./modules/process/process.module').then((m) => m.ProcessModule),
   },
