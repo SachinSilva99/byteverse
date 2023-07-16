@@ -17,7 +17,8 @@ import { MainHeaderFooterComponent } from './components/main-header-context/inne
 
     ],
   exports: [
-    MainHeaderNavBarComponent
+    MainHeaderNavBarComponent,
+    MainHeaderFooterComponent
   ],
     imports: [
         CommonModule,

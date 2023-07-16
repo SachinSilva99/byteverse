@@ -5,14 +5,14 @@ import {IndustrialPageContextComponent} from "./components/industrial-page-conte
 import {MainPageContextComponent} from "./components/main-page-context/main-page-context.component";
 
 const routes: Routes = [
-  // { path: '', component: ProcessComponent },
   {
     path: '', component: MainPageContextComponent, children: [
       {path: '', redirectTo: 'home', pathMatch: "full"},
       {path: 'home', component: MainPageContextComponent},
       {path: 'industrial', component: IndustrialPageContextComponent},
     ]
-  }];
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
